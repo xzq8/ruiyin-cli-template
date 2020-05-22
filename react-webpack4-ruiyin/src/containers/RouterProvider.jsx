@@ -21,8 +21,8 @@ export default class RouterProvider extends Component {
             path={path}
             exact
             render={(props) => {
-                // openIdJson.openId && openIdJson.openId != "null"
-                return ((openIdJson.openId && openIdJson.openId != "null" )  || CODE) ? (
+                // return ((openIdJson.openId && openIdJson.openId != "null" )  || CODE) ? (
+                    return (true) ? (
                     <MyComponent  {...props} />
                 ) : (
                         <Redirect

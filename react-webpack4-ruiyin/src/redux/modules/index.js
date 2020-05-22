@@ -63,26 +63,33 @@ export function getDatasList(id, serviceId, cb) {
 
 function getlocationWX() {
   return new Promise((resolve, reject) => {
-    window.wx.ready(function () {
-      window.wx.getLocation({
-        type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
-        success: function (res) {
-          console.log(res);
-          let userLat = res.latitude; // 纬度，浮点数，范围为90 ~ -90
-          let userLon = res.longitude; // 经度，浮点数，范围为180 ~ -180。
-          resolve({ userLat, userLon })
-        },
-        fail: function (res) {
-          let userLat = '39.9073660600'; // 纬度，浮点数，范围为90 ~ -90
-          let userLon = '116.4119052900'; // 经度，浮点数，范围为180 ~ -180。
-          resolve({ userLat, userLon })
-        }
+    try {
+      window.wx.ready(function () {
+        window.wx.getLocation({
+          type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
+          success: function (res) {
+            console.log(res);
+            let userLat = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+            let userLon = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+            resolve({ userLat, userLon })
+          },
+          fail: function (res) {
+            let userLat = '39.9073660600'; // 纬度，浮点数，范围为90 ~ -90
+            let userLon = '116.4119052900'; // 经度，浮点数，范围为180 ~ -180。
+            resolve({ userLat, userLon })
+          }
+        });
       });
-    });
-    window.wx.error(function (res) {
-      console.log('-----------------------------');
-      console.log("errorMSG:" + res);
-    });
+      window.wx.error(function (res) {
+        console.log('-----------------------------');
+        console.log("errorMSG:" + res);
+      });
+    } catch (error) {
+      let userLat = '39.9073660600'; // 纬度，浮点数，范围为90 ~ -90
+      let userLon = '116.4119052900'; // 经度，浮点数，范围为180 ~ -180。
+      resolve({ userLat, userLon })
+    }
+
   });
 }
 

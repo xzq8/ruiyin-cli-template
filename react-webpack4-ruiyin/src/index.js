@@ -11,13 +11,13 @@ import "./static/font/iconfont.css"
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-var paramsJson = parseQuery(window.location.search)
-var CODE = paramsJson.code;
-CODE && getOpenId(CODE)
-// let vConsole = new VConsole();
-login(()=>{
-  console.log("获取微信成功")
-})
+// var paramsJson = parseQuery(window.location.search)
+// var CODE = paramsJson.code;
+// CODE && getOpenId(CODE)
+// // let vConsole = new VConsole();
+// login(()=>{
+//   console.log("获取微信成功")
+// })
 const store = configStore()
 
 ReactDOM.render(<Provider store={store}>
