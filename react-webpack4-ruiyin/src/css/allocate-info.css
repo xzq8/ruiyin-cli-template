@@ -1,0 +1,97 @@
+﻿/*公共*/
+html,
+body,
+div,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, SimSun, sans-serif;
+}
+
+body {
+	background: #fff;
+}
+
+li {
+	list-style: none;
+}
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.m-t-15 {
+	margin-top: 15px;
+}
+
+button {
+	outline: none !important;
+}
+
+
+.allocate-row {
+	margin: .2rem 0;
+	position: relative;
+}
+
+/*按钮组*/
+
+.btn-allocate {
+	padding: .3rem;
+	margin: .2rem 0rem .1rem .1rem;
+	font-size: .3rem;
+	display: inline-block;
+}
+
+/*正常的按钮*/
+
+.btn-allocate.btn-normal {
+	border: 1px solid #ddd;
+	color: #333;
+	background-color: transparent;
+}
+
+.btn-allocate.btn-normal:hover {
+	color: #ff9910;
+	background: #fff1ee;
+	border: 1px solid transparent;
+}
+
+.btn-allocate.btn-normal.active {
+	color: #ff9910;
+	background: #fff1ee;
+	border: 1px solid transparent;
+}
+.allocate_list .name{
+	font-size: .3rem;
+}

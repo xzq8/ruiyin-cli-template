@@ -1,0 +1,26 @@
+.jiankgn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .2rem 0;
+  > img {
+    display: block;
+    width: 1.7rem;
+  }
+  ul.jiankang_body {
+    width: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1.5rem;
+        font-size: 0.25rem;
+        >img{
+            width: .3rem;
+        }
+    }
+  }
+}

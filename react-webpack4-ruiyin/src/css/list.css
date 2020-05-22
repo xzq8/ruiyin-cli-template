@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    /* padding: 0.2rem;
+    box-sizing: border-box; */
+}
+.pro{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    padding: .15rem .15rem 0;
+    box-sizing: border-box;
+    border-bottom: .1rem solid #f6f6f6;
+}
+.pro_title{
+    font-size: .32rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.pro_introduce{
+    font-size: 0.25rem;
+    margin-top: 0.17rem;
+    display: flex;
+    align-items: center;
+}
+.juli{
+    justify-content: space-between;
+}
+.timeicon{
+    width: 0.3rem;
+}
+.yuyueicon{
+    width: 1.5rem;
+}
+.start{
+    margin-top: 0.17rem; 
+    display: flex;
+    align-items: center;
+}
+.pro_detail{
+    margin-top: 0.17rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.25rem;
+}
+.pro_addr{
+    flex: 1;
+    font-size: .28rem;
+    line-height: 1.2;
+    padding-right: .8rem;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+.phoneicon{
+    width: 100%;
+}
+.phone{
+    width: 0.5rem;
+}
+.pro_addr div:nth-child(2){
+    color: #999;
+}
+.pro_img{
+    margin-top: 0.17rem;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+.pro_img>img{
+    width: 1.7rem;
+    margin-right: 5px;
+    height: 1.7rem;
+}
+.pro_detailImg{
+    font-size: 0.28rem;
+    display: flex;
+    align-items: center;
+}
+.pro_detailImg>img{
+    width: .3rem;
+    margin-right: .3rem;
+}
+.pro_detail_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.25rem;
+    padding: 0.2rem 0;
+}
+.am-list-body::before{
+    display: none !important;
+}

@@ -1,0 +1,26 @@
+.wrapper_ul{
+    margin-top: .1rem;
+}
+.pro_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    >img{
+        margin-right: .15rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: .08rem;
+        -webkit-border-radius: .08rem;
+        -moz-border-radius: .08rem;
+        -ms-border-radius: .08rem;
+        -o-border-radius: .08rem;
+}
+    .pro_body{
+        flex: 1;
+        .pro_introduce{
+            i{
+                margin: 0 .1rem;
+            }
+        }
+    }
+}

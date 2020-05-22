@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    padding: 0.2rem;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.imglist >div{
+    width: 49%;
+    margin-bottom: 1%;
+}
+.imglist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imglist >div>img{
+    width: 100%;
+}
+.header{
+    height: 0.8rem;
+    border-bottom: 3px solid #f6f6f6;
+    width: 100%;
+
+    display: flex;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.header div:nth-child(1){
+    width: 11%;
+}
+.header div:nth-child(1) img{
+    width: 19%;
+}
+
+.header div:nth-child(2){
+    width: 78%;
+}
+.header div:nth-child(3){
+    width: 11%;
+}

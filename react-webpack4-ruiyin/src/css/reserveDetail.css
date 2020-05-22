@@ -1,0 +1,289 @@
+.header{
+    height: 0.88rem;
+    line-height: .88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .3rem;
+    border-bottom: .02rem solid #f3f3f3;
+    box-shadow: 0 0 .1rem .05rem #f3f3f3 ;
+}
+.header .back img{
+    display: block;
+    width: .23rem;
+}
+.header>div{
+    width: .5rem;
+}
+.header h3{
+    font-size: .32rem;
+    font-weight: 400;
+    flex: 1;
+    text-align: center;
+}
+.reserveDetail{
+    position: relative;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+    width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 5.66rem;
+}
+.maincontainer{
+    padding: .3rem .4rem 0;
+}
+.storeMessage{
+    padding-bottom: .1rem;
+    
+}
+.storeMessage .storeName{
+    font-size: .36rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #333333;
+}
+.storeMessage .storeOpen{
+    align-items: center;
+    margin-top: .2rem;
+}
+.storeMessage .storeOpen .openImg{
+    width: .3rem;
+    align-items: center;
+    display: inline-block;
+    /* border-right: 1px solid #333; */
+    padding-right: .1rem;
+}
+.storeMessage .storeOpen .openImg>img{
+    width: .26rem;
+
+}
+.storeMessage .storeOpen .openTime{
+    font-size: .28rem;
+    margin-left: .05rem;
+    display: inline-block;
+}
+.storeMessage .mystar{
+    margin: .2rem 0;
+}
+.storeMessage .distanceMsg{
+    position: relative;
+}
+.storeMessage .distanceMsg .disaddress{
+    color: #7d7d7d;
+    margin: .2rem 0;
+}
+.storeMessage .distanceMsg .disHeader{
+    margin-bottom: .1rem;
+}
+.storeMessage .distanceMsg .disHeader .distance{
+    font-size: .3rem;
+    display: inline-block;
+    /* border-right: 1px solid #333; */
+    padding-right: .1rem;
+}
+.storeMessage .distanceMsg .disHeader .address{
+    font-size: .3rem;
+    display: inline-block;
+}
+.storeMessage .distanceMsg .phoneImg{
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    width: .5rem;
+}
+.storeMessage .distanceMsg .phoneImg img{
+    width: 100%;
+    display: block;
+}
+/* 预订服务 */
+.reserveContent{
+    padding-top: .4rem;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: .5rem;
+    border-top: 1px solid #f7f7f7;
+}
+.reserveContent .reserveHeader{
+    margin-bottom: .28rem;
+}
+.reserveContent .reserveHeader>h3{
+    font-size: .42rem;
+    color: #333;
+    display: inline-block;
+}
+.reserveContent .reserveHeader .reserveState{
+    float: right;
+    padding-top: .1rem;
+}
+.reserveContent .reserveHeader .reserveState img{
+    width: .3rem;
+}
+.reserveContent .reserveHeader .reserveState .stateTxt{
+    float: right;
+    padding-left: .2rem;
+    color: #bdbdbd;
+}
+.reserveMsg .resImg{
+    /* float: left; */
+    width: 2.6rem;
+}
+.reserveMsg .resImg>img{
+    width: 100%;
+    max-height: 1.8rem;
+}
+.reserveMsg .resTxt{
+    width: 55%;
+    /* float: left; */
+    margin-left: 0.2rem;
+}
+.reserveMsg .resTxt>p:first-child{
+    font-size: .36rem;
+    padding-top: .1rem;
+    color: #333;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.reserveMsg .resTxt>p:first-child::-webkit-scrollbar{
+    display: none;
+}
+.reserveMsg .resTxt>p:nth-child(2){
+    font-size: .24rem;
+    margin-top: .24rem;
+    color: #bcbcbc;
+}
+.reserveMsg .resTxt>p:nth-child(2) i{
+    font-style: normal;
+    color: #333;
+    margin-left: .1rem;
+}
+.reserveMsg .resTxt>p:nth-child(3){
+    font-size: .24rem;
+    margin-top: .36rem;
+    color: #bcbcbc;
+}
+
+
+/* 弹窗 */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.mywindow{
+    background-color:rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    flex: 1;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.chooseWindow{
+    padding: 0 .22rem;
+    width: 94%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.chooseWindow .chooseHeader{
+    text-align: center;
+    padding: .2rem .4rem;
+    position: relative;
+}
+.chooseWindow .chooseHeader p{
+    color: #bdbdbd;
+    font-style: .24rem;
+    position: relative;
+}
+.chooseWindow .chooseHeader p i{
+    border-top: 1px solid #bdbdbd;
+    width: 1rem;
+    display: inline-block;
+    position: absolute;
+}
+.chooseWindow .chooseHeader p i:first-child{
+    top: 50%;
+    left: 24%;
+}
+.chooseWindow .chooseHeader p i:nth-child(2){
+    top: 50%;
+    left: 63%;
+}
+
+.chooseWindow .chooseHeader .closeImg{
+    width: .24rem;
+    position: absolute;
+    top: 30%;
+    right: 4%;
+}
+.chooseWindow .chooseHeader .closeImg>img{
+    width: 100%;
+}
+.chooseWindow>.g-ulBox{
+    width: 100%;
+    overflow: hidden;
+}
+.chooseWindow .g-ulBox ul li{
+    float: left;
+    /* margin-left: .2rem; */
+}
+.chooseWindow .g-ulBox ul li p{
+    font-size: .3rem;
+    padding: .2rem;
+    border-bottom: 1px solid #fff5f3;
+}
+.choose{
+    border-bottom: 1.5px solid #fe620f;
+}
+.chooseWindow .nextBtn{
+    background: #ff9910;
+    color: #fff;
+    font-size: .36rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .2rem 0;
+    margin-bottom: .3rem;
+}
+.reserveMsg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reserveMsg .resBtn {
+    /* float: right; */
+    /* margin-top: .5rem; */
+    background: #fe620f;
+    color: #fff;
+    /* padding: .1rem .2rem; */
+    /* margin-right: .2rem; */
+    height: 0.5rem;
+    width: 1rem;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 0.1rem;
+}
+.notToDay{
+    color: #ccc
+}
+.disContent{
+    width: 6rem;
+}
+.reserveDetail .maincontainer .pro_detail_1 .pro_detailImg > img {
+    width: .4rem;
+}
+.reserveDetail .maincontainer .pro_detail_1 .pro_detailImg {
+    font-size: .3rem;
+}

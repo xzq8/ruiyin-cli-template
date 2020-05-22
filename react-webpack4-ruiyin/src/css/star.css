@@ -1,0 +1,42 @@
+.star-component {
+    position: relative;
+    display: inline-block;
+}
+
+.star-component .star-item {
+    display: inline-block;
+    width: .2rem;
+    height: .2rem;
+    cursor: pointer;
+    padding-right: .05rem;
+    transition: all .1s ease-in;
+}
+
+.star-component:not(.star-readonly) .star-item:hover {
+    transform: scale(1.2);
+}
+
+.star-component:not(.star-readonly) .star-item:active {
+    transform: scale(1.3);
+}
+
+.star-component .star-item.star-on {
+    background: url('../images/star-on.png') no-repeat center / .2rem;
+}
+
+.star-component .star-item.star-off {
+    background: url('../images/star-off.png') no-repeat center / .2rem;
+}
+
+/* // 只读状态的星星层，定位覆盖背景层，然后动态设置宽度 */
+.star-component.star-readonly .star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.star-component.star-readonly .star-item {
+    cursor: not-allowed;
+}

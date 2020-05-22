@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+}
+#root,
+.rootdiv {
+  height: 100%;
+}
+.yellow {
+  background-color: #ffedc3;
+  color: #d09147;
+  padding: 0.2rem;
+  line-height: 1.3;
+  text-align: center;
+  border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -ms-border-radius: 0.1rem;
+  -o-border-radius: 0.1rem;
+  font-size: 0.26rem;
+}
+.mfyy {
+  height: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.16rem;
+  .submit {
+    background-color: #fe6e3c;
+    color: #ffffff;
+    font-size: 0.4rem;
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    -o-border-radius: 0.1rem;
+  }
+}
+.pagehe {
+  height: calc(100% - 1rem);
+  overflow: auto;
+}
+.xiangmubody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .2rem 0;
+  li {
+    width: 49%;
+    line-height: 1.2;
+    border: 0.02rem solid #ccc;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    -o-border-radius: 0.1rem;
+    box-sizing: border-box;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 0.26rem;
+    &.selected {
+      position: relative;
+      border-color: #ff7e00;
+      color: #ff7e00;
+      background-color: #ffedc3;
+      &::after {
+        content: "";
+        background: url("../static/img/selected.png") no-repeat center;
+        background-size: contain;
+        width: 0.4rem;
+        height: 0.4rem;
+        position: absolute;
+        top: -0.2rem;
+        right: -0.2rem;
+      }
+    }
+  }
+}
+.xiangmubiaoti {
+  line-height: 1.2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.yzm{
+  font-size: .22rem;
+  padding: .02rem;
+  color: #fe6e3c;
+  border-radius: .1rem;
+  -webkit-border-radius: .1rem;
+  -moz-border-radius: .1rem;
+  -ms-border-radius: .1rem;
+  -o-border-radius: .1rem;
+}
+.my-item{
+  padding-left: 0;
+}
